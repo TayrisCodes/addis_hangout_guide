@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Addis Hangout Guide
 
-# Run and deploy your AI Studio app
+A modern directory for the youth of Addis Ababa. Built using **HTML5, CSS3, and JavaScript** (via React), this is a dedicated **youth-relevant resource** designed for the capital's urban explorers.
 
-This contains everything you need to run your app locally.
+## Project Architecture
 
-View your app in AI Studio: https://ai.studio/apps/889efdfb-4746-463d-83de-0d8a8877b845
+- **React + Vite**: For high-performance frontend builds.
+- **Tailwind CSS**: Utility-first styling with custom 'Artistic Flair' configuration.
+- **Framer Motion**: Smooth entrance animations and interactive states.
+- **Lucide React**: Minimalist iconography.
 
-## Run Locally
+## Source Structure
 
-**Prerequisites:**  Node.js
+- `src/App.tsx`: Main entry point and layout orchestration.
+- `src/data.tsx`: Centralized hangout data repository.
+- `src/types.ts`: Shared TypeScript definitions.
+- `src/index.css`: Global styles and theme variable definitions.
 
+## Design Philosophy
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The project follows an "Artistic Flair" aesthetic, utilizing a high-contrast palette (Vibrant Orange, Ink, and Paper) and bold typography to appeal to a younger, tech-savvy audience in the capital.
+
+---
+Built by local explorers for local explorers.
