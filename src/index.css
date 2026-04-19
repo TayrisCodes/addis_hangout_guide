@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Arial, sans-serif;
+
+  --color-primary: #FF4D00;
+  --color-ink: #0A0A0A;
+  --color-paper: #F9F9F7;
+  --color-line: #E2E2E2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased text-ink bg-paper;
+  }
+}
+
+@layer components {
+  .btn-explore {
+    @apply bg-primary text-white px-8 py-4 rounded-full font-bold transition-all shadow-[0_10px_20px_rgba(255,77,0,0.2)] hover:shadow-[0_15px_30px_rgba(255,77,0,0.3)] hover:-translate-y-0.5;
+  }
+  
+  .card-artistic {
+    @apply bg-white border border-line rounded-[24px] p-6 transition-transform duration-200 hover:scale-[1.01];
+  }
+  
+  .nav-link-artistic {
+    @apply text-[13px] font-semibold uppercase tracking-wider text-ink opacity-60 transition-opacity hover:opacity-100;
+  }
+}
